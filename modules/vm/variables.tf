@@ -15,9 +15,9 @@ variable "mac_address" {
   description = "Static MAC address for consistent DHCP assignment"
 }
 
-variable "ssh_key" {
-  type = string
-}
+#variable "ssh_key" {
+#  type = string
+#}
 
 #variable "pool_path" {
 #  description = "Absolute path to the storage pool directory"

@@ -19,8 +19,8 @@ module "meatartbot_vm" {
   image_url  = var.image_url
   pool       = var.pool
   network    = var.network
-  #ssh_authorized_key = file("~/.ssh/meatartbot.pub")
-  ssh_key  = file("~/.ssh/meatartbot.pub")
+  ssh_authorized_key = file("~/.ssh/meatartbot.pub")
+  #ssh_key  = file("~/.ssh/meatartbot.pub")
   mac_address = "52:54:00:c6:38:81" 
   #pool_path  = "/home/perfesser/libvirt-images"
 
@@ -36,8 +36,8 @@ module "ollama_vm" {
   pool       = var.pool
   network    = var.network
   mac_address = "52:54:00:86:74:ec"
-  #ssh_authorized_key = file("~/.ssh/meatartbot.pub")
-  ssh_key  = file("~/.ssh/meatartbot.pub")
+  ssh_authorized_key = file("~/.ssh/meatartbot.pub")
+  #ssh_key  = file("~/.ssh/meatartbot.pub")
   #pool_path  = "/home/perfesser/libvirt-images"
 
 }
