@@ -1,0 +1,7 @@
+.terraform/
+terraform.tfstate*
+*.backup
+*.log
+*.iso
+*.qcow2
+cloud-init.cfg
