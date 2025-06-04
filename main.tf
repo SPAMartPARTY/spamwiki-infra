@@ -22,7 +22,7 @@ module "test_vm" {
   #ssh_authorized_key = file("~/.ssh/meatartbot.pub")
   ssh_authorized_key = file("${path.module}/meatartbot.pub")
   #ssh_key  = file("~/.ssh/meatartbot.pub")
-  #mac_address = "52:54:00:c6:38:81"
+  mac_address = "52:54:00:c6:38:82"
   #pool_path  = "/home/perfesser/libvirt-images"
 
 }
