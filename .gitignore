@@ -4,4 +4,5 @@ terraform.tfstate*
 *.log
 *.iso
 *.qcow2
-cloud-init.cfg
+.runner/.env
+

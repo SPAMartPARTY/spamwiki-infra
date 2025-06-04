@@ -1,0 +1,14 @@
+[Unit]
+Description=GitHub Actions Self-Hosted Runner
+After=network.target
+
+[Service]
+ExecStart=/home/perfesser/actions-runner/run.sh
+User=perfesser
+WorkingDirectory=/home/perfesser/actions-runner
+Restart=always
+StartLimitInterval=0
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
