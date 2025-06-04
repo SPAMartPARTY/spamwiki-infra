@@ -14,7 +14,7 @@ provider "libvirt" {
 module "test_vm" {
   source    = "./modules/vm"
   name      = "testvm"
-  memory    = 4096
+  memory    = 2048
   vcpus     = 2
   image_url = var.image_url
   pool      = var.pool
