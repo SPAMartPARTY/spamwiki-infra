@@ -11,6 +11,21 @@ provider "libvirt" {
   uri = "qemu:///system"
 }
 
+module "test_vm" {
+  source    = "./modules/vm"
+  name      = "testvm"
+  memory    = 4096
+  vcpus     = 2
+  image_url = var.image_url
+  pool      = var.pool
+  network   = var.network
+  #ssh_authorized_key = file("~/.ssh/meatartbot.pub")
+  ssh_authorized_key = file("${path.module}/meatartbot.pub")
+  #ssh_key  = file("~/.ssh/meatartbot.pub")
+  #mac_address = "52:54:00:c6:38:81"
+  #pool_path  = "/home/perfesser/libvirt-images"
+
+}
 
 
 module "meatartbot_vm" {
