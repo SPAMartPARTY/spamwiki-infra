@@ -11,6 +11,7 @@ provider "libvirt" {
   uri = "qemu:///system"
 }
 
+
 module "meatartbot_vm" {
   source    = "./modules/vm"
   name      = "meatartbot"
