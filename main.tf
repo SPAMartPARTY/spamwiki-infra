@@ -12,6 +12,7 @@ provider "libvirt" {
 }
 
 
+
 module "meatartbot_vm" {
   source    = "./modules/vm"
   name      = "meatartbot"
